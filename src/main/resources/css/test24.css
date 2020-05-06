@@ -1,0 +1,12 @@
+
+.label {
+    -fx-font-size: 14;
+}
+
+.GridPane {
+    -fx-background-color: #FFF5EE;
+}
+
+.hbox {
+    -fx-background-color: blue;
+}

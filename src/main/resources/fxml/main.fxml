@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.alan344.lesson24_login_test.Controller"
+          stylesheets="/css/test24.css"
+          prefHeight="400.0" prefWidth="600.0" alignment="CENTER" hgap="10" vgap="17">
+
+    <Label id="label-name" text="账号：" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label id="label-pwd" text="密码：" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Button onAction="#login" text="登录"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+        <RadioButton mnemonicParsing="false" text="male">
+            <toggleGroup>
+                <ToggleGroup fx:id="tt"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton mnemonicParsing="false" text="fmale" toggleGroup="$tt"/>
+    </HBox>
+</GridPane>
